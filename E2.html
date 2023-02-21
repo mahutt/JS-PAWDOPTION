@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E2</title>
+</head>
+
+<body>
+    <h1>JavaScript Array</h1>
+    <h2>Print the elements of an array using toString()</h2>
+    <p id="toString-print-location"></p>
+    <h2>Print the elements of an array using join()</h2>
+    <p id="join-print-location"></p>
+    <h2>Print the elements of an array in the format of index: value</h2>
+    <p id="index:value-print-location"></p>
+    <script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    // PRINTING FRUITS USING TOSTRING()
+    for (let fruit in fruits) {
+        if (fruit == fruits.length-1)
+            document.getElementById("toString-print-location").innerHTML += fruits[fruit].toString();
+        else
+            document.getElementById("toString-print-location").innerHTML += fruits[fruit].toString() + ",";
+    }
+    // PRINTING FRUITS USING JOIN()
+    document.getElementById("join-print-location").innerHTML = fruits.join("&");
+    // PRINTING FRUITS IN INDEX:VALUE FORMAT
+    // what method should i use?
+    for (let fruit in fruits) {
+        document.getElementById("index:value-print-location").innerHTML += fruit + ":" + fruits[fruit] + "<br>";
+    }
+    </script>
+</body>
+
+</html>
