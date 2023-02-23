@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E4</title>
+    <style>
+    .form {
+        border: 1px solid black;
+        padding: 10px;
+        max-width: 400px;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Order Books Online</h1>
+    <div class="form">
+        <table>
+            <tr>
+                <th>Book</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Basic Web Programming</td>
+                <td><input type="number"></td>
+                <td>$19.99</td>
+            </tr>
+            <tr>
+                <td>Intro to PHP</td>
+                <td><input type="number"></td>
+                <td>$86.00</td>
+            </tr>
+            <tr>
+                <td>Advanced JQuery</td>
+                <td><input type="number"></td>
+                <td>$55.00</td>
+            </tr>
+        </table>
+        <br>
+        <button onclick="process()">Calculate the order</button>
+    </div>
+
+    <div id="display">
+
+    </div>
+    
+</body>
+</html>
+
+
+<!-- why my input fields so long? -->
