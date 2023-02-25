@@ -44,5 +44,9 @@ function reverseString(stringIn) {
     return stringOut;
 }
 
+function getCurrentDate() {
+    return Date.getDate;
+}
+
 
 
