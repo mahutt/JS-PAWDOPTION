@@ -1,5 +1,6 @@
 const numbers = [1, 2, 3, 4, 5];
 const mixedData = [4, 5, "3.0 birds", true, "birds2"];
+const str = "sdg1sf23hgasd4df5vs6re7hre8hsv9ngf";
 
 function addNumbers(numbers) {
     
@@ -31,10 +32,10 @@ function addOnlyNumbers(mixedData) {
     return sum;
 }
 
-// function getDigits(in) {
-//     let out = "";
-//     for (let letter of )
-// }
+function getDigits(str) {
+    let digits = str.match(/\d/g);
+    return digits.join("");
+}
 
 function reverseString(stringIn) {
     let stringOut = "";
