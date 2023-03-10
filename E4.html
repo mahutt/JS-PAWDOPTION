@@ -4,13 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>E4</title>
-    <script type="text/javascript" src="E4.js"></script>
+    
     <style>
+    
+    #display p {
+        margin: 0;
+    }
+
     .form {
         border: 1px solid black;
         padding: 10px;
         max-width: 400px;
     }
+
     
     </style>
 </head>
@@ -25,30 +31,37 @@
             </tr>
             <tr class="basic-web-prog"></tr>
                 <td>Basic Web Programming</td>
-                <td><input type="number"></td>
+                <td><input type="text" size="1" id="BWP-q"></td>
                 <td>$19.99</td>
             </tr>
             <tr>
                 <td>Intro to PHP</td>
-                <td><input type="number"></td>
+                <td><input type="text" size="1" id="ITP-q"></td>
                 <td>$86.00</td>
             </tr>
             <tr>
                 <td>Advanced JQuery</td>
-                <td><input type="number"></td>
+                <td><input type="text" size="1" id="AJ-q"></td>
                 <td>$55.00</td>
             </tr>
         </table>
         <br>
-        <button onclick="process()">Calculate the order</button>
+        <button id="process-button">Calculate the order</button>
+        
     </div>
 
     <div id="display">
+        <p id="BWP-subtotal"></p>
+        <p id="ITP-subtotal"></p>
+        <p id="AJ-subtotal" ></p>
+        <br>
+        <p id="total"></p>
+
+
 
     </div>
     
+    <script type="text/javascript" src="E4.js"></script>
 </body>
 </html>
 
-
-<!-- why my input fields so long? -->
