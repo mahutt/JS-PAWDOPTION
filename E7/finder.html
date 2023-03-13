@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Pawdoption | Find A Pet</title>
+    <link rel="stylesheet" href="general.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <a href="home.html"><img src="pawdoption_logo3.png" alt="Logo"></a>
+        </div>
+        <div class="titles">
+            <h1>PAWDOPTION</h1>
+            <p>Cat & Dog Adoption Agency</p>
+        </div>
+        <div id="date"></div>
+    </div>
+    <div class="main">
+        <div class="menubox">
+            <div class="menu">
+                <a href="home.html">Home Page</a>
+                <a href="browse.html">Browse Available Pets</a>
+                <a href="finder.html">Find a dog/cat</a>
+                <a href="dogcare.html">Dog Care</a>
+                <a href="catcare.html">Cat Care</a>
+                <a href="give.html">Have a pet to give Away</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+        <div class="content">
+            <h1>
+                Find a cat or dog
+            </h1>
+            <p>
+                Fill out the form below and we'll get straight to work, selecting
+                a pet that would fit best with you! 
+                <br>Your new best friend is just a few
+                clicks away.
+            </p>
+            <form class="bubble" id="catform">
+                <h2><u>Cat Person Form</u></h2>
+                <label class="prompt">Preferred Gender</label>
+                <br>
+                <label><input type="radio" name="animalGender" value="female">Female</label>
+                <label><input type="radio" name="animalGender" value="male">Male</label>
+                <label><input type="radio" name="animalGender" value="dontCare">Doesn't Matter</label>
+                <br><br>
+                <label for="catBreed" class="prompt">Preffered Breed</label>
+                <br>
+                <select name="catBreed" id="catBreed">
+                    <option value="dontCare">Doesn't Matter</option>
+                    <option value="britishShorthair">British Shorthair</option>
+                    <option value="persian">Persian</option>
+                    <option value="maineCoon">Maine Coon</option>
+                    <option value="americanShorthair">American Shorthair</option>
+                    <option value="scottishFold">Scottish Fold</option>
+                    <option value="sphynx">Sphynx</option>
+                    <option value="mixed">Mixed Breed</option>
+                    <option value="else">Else</option>
+                </select><br><br>
+                <label for="catAge" class="prompt">Preffered Age</label><br>
+                <select name="catAge" id="catAge">
+                    <option value="dontCare">Doesn't Matter</option>
+                    <option value="lessThan1">Less than 1 year</option>
+                    <option value="1to4">Between 1 and 4 years</option>
+                    <option value="4to8">Between 4 and 8 years</option>
+                    <option value="moreThan8">More than 8 years</option>
+                </select><br><br>
+                <label class="prompt">Select any of the following:</label><br>
+                <label><input type="checkbox" name="behaviour" value="catCompatible">Must get along with cats</label><br>
+                <label><input type="checkbox" name="behaviour" value="dogCompatible">Must get along with dogs</label><br>
+                <label><input type="checkbox" name="behaviour" value="childCompatible">Must get along with small children</label>
+                <br><br>
+                <input type="submit">
+                <input type="reset">
+            </form>
+            <form class="bubble" id="dogform">
+                <h2><u>Dog Person Form</u></h2>
+                <label class="prompt">Preferred Gender</label>
+                <br>
+                <label><input type="radio" name="animalGender" value="female">Female</label>
+                <label><input type="radio" name="animalGender" value="male">Male</label>
+                <label><input type="radio" name="animalGender" value="dontCare">Doesn't Matter</label>
+                <br><br>
+                <label for="dogBreed" class="prompt">Preffered Breed</label>
+                <br>
+                <select name="dogBreed" id="dogBreed">
+                    <option value="dontCare">Doesn't Matter</option>
+                    <option value="goldenRetriever">Golden Retriever</option>
+                    <option value="labradorRetriever">Labrador Retriever</option>
+                    <option value="frenchBulldog">French Bulldog</option>
+                    <option value="beagle">Beagle</option>
+                    <option value="poodle">Poodle</option>
+                    <option value="mixed">Mixed Breed</option>
+                    <option value="else">Else</option>
+                </select>
+                <br><br>
+                <label for="dogAge" class="prompt">Preffered Age</label><br>
+                <select name="dogAge" id="dogAge">
+                    <option value="dontCare">Doesn't Matter</option>
+                    <option value="lessThan1">Less than 1 year</option>
+                    <option value="1to4">Between 1 and 4 years</option>
+                    <option value="4to8">Between 4 and 8 years</option>
+                    <option value="moreThan8">More than 8 years</option>
+                </select>
+                <br><br>
+                <label class="prompt">Select any of the following:</label><br>
+                <label><input type="checkbox" name="behaviour" value="catCompatible">Must get along with cats</label><br>
+                <label><input type="checkbox" name="behaviour" value="dogCompatible">Must get along with dogs</label><br>
+                <label><input type="checkbox" name="behaviour" value="childCompatible">Must get along with small children</label>
+                <br><br>
+                <input type="submit">
+                <input type="reset">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <h3>&copy; Pawdoption 2023</h3>
+        <a href="disclaimer.html">Pawdoption's Privacy Policy</a>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
