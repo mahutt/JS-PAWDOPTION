@@ -1,8 +1,10 @@
 /* To display the date and time in the header: */
-
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 function displayDate() {
-    var date = new Date();
-    document.getElementById("date").innerHTML = date.toDateString() + "<br>" + date.toLocaleTimeString();
+    let date = new Date();
+    document.getElementById("date").innerHTML = days[date.getDay()] + ", " + months[date.getMonth()] 
+        + " " + date.getDate() + ", " + date.getFullYear() + "<br>" + date.toLocaleTimeString();
 }
 setInterval(displayDate, 1000);
 
@@ -26,7 +28,7 @@ function validateDogForm() {
 // MAKE FOCUS SWITCH TO AREA OF CONCERN?
 
 function validateGiveawayForm() {
-    let formElements = document.getElementById("giveawayform");
+    const formElements = document.getElementById("giveawayform");
     if (!formElements["animalType"][0].checked && !formElements["animalType"][1].checked) {
         alert("Please choose an animal type.")
         return false;
