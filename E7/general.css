@@ -66,7 +66,7 @@ body {
 }
 
 .content {
-    max-width: 80%; 
+    /* max-width: 80%;  */
     min-height: 650px;
     padding: 20px;
     background-color: #f0efeb;
@@ -121,7 +121,7 @@ body {
     font-weight: bold;
 }
 
-input[type=submit], input[type=reset] {
+input[type=submit], input[type=reset], .interested-button {
     min-width: 100px;
     background-color: #CB997E;
     border: 1px solid black;
@@ -133,11 +133,11 @@ input[type=submit], input[type=reset] {
     box-shadow: 5px 5px rgb(29, 29, 29);
 }
 
-input[type=submit]:hover, input[type=reset]:hover {
+input[type=submit]:hover, input[type=reset]:hover, .interested-button:hover {
 background-color: #DDBEA9;
 }
 
-input[type=submit]:active, input[type=reset]:active {
+input[type=submit]:active, input[type=reset]:active, .interested-button:active {
     position: relative;
     box-shadow: none;
     left: 5px;
@@ -145,9 +145,10 @@ input[type=submit]:active, input[type=reset]:active {
 }
 
 .pet-bubble {
+    width: 100%;
     /* max-width: 500px; */
     display: flex;
-    margin: 10px;
+    margin: 20px;
     border: 1px solid black;
     border-radius: 50px;
     padding: 30px;
@@ -156,16 +157,46 @@ input[type=submit]:active, input[type=reset]:active {
     color: black;
 }
 
+
+
 .pet-bubble:hover {
     background-color: #B7B7A4;
 }
 
-.pet-bubble * {
-    margin: 10px;
-    
+.pet-bubble .pet-img {
+    width: 40%;
+    padding: 10px;
+
 }
 
 .pet-bubble .pet-img img {
     width: 100%;
     border-radius: 25px;
 }
+
+.pet-bubble .pet-info {
+    width: 20%;
+    padding: 10px;
+}
+
+.pet-bubble .pet-info ul {
+    
+    padding: 10px;
+}
+
+
+.pet-bubble .pet-description {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pet-bubble .pet-description p {
+    padding: 15px;
+    font-style: italic;
+    background-color: #DDBEA9;
+    border-radius: 25px;
+    box-shadow: 5px 5px rgb(29, 29, 29, 0.8);
+}
+

@@ -41,7 +41,7 @@
                 Please note that, should we accept to provide adoption services for your pet, the owner
                 is responsible for bringing the animal to our on-site location.
             </p>
-            <form class="bubbles">
+            <form class="bubbles" name="giveawayform" id="giveawayform" onsubmit="return validateGiveawayForm()">
                 <div class="bubble">
                     <h2><u>Pet Information:</u></h2>
                     <label class="prompt">Animal Type</label>
@@ -89,7 +89,7 @@
                     <br><br>
                     <label for="petDescription">Tell Us More About Your Pet:</label>
                     <br>
-                    <textarea id="petDescription" name="petDescription" rows="4" cols="50" placeholder="(brag about your pet here)"></textarea>
+                    <textarea id="petDescription" name="petDescription" rows="4" cols="50" placeholder="(brag about your pet here - required)"></textarea>
                     <br><br>
                 </div>
                 <div class="bubble">

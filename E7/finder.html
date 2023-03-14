@@ -41,7 +41,7 @@
                 <br>Your new best friend is just a few
                 clicks away.
             </p>
-            <form class="bubble" id="catform">
+            <form class="bubble" id="catform" name="catform" onsubmit="return validateCatForm()">
                 <h2><u>Cat Person Form</u></h2>
                 <label class="prompt">Preferred Gender</label>
                 <br>
@@ -78,7 +78,7 @@
                 <input type="submit">
                 <input type="reset">
             </form>
-            <form class="bubble" id="dogform">
+            <form class="bubble" id="dogform" name="dogform" onsubmit="return validateDogForm()">
                 <h2><u>Dog Person Form</u></h2>
                 <label class="prompt">Preferred Gender</label>
                 <br>
@@ -113,7 +113,7 @@
                 <label><input type="checkbox" name="behaviour" value="dogCompatible">Must get along with dogs</label><br>
                 <label><input type="checkbox" name="behaviour" value="childCompatible">Must get along with small children</label>
                 <br><br>
-                <input type="submit">
+                <input type="submit" onsubmit="validate()">
                 <input type="reset">
             </form>
         </div>
